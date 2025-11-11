@@ -1,0 +1,180 @@
+/* Đặt font và reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #004aad;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero */
+.hero {
+    background: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero span {
+    color: #ffcc00;
+}
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #004aad;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn:hover {
+    background: #ffaa00;
+}
+
+/* Section chung */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+/* Courses */
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.course-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.course-item h3 {
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+/* Teachers */
+.teacher-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.teacher-item {
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.teacher-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Register */
+.register {
+    background: #004aad;
+    color: #fff;
+    padding: 50px 0;
+}
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.register input,
+.register select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.register button {
+    background: #ffcc00;
+    color: #004aad;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register button:hover {
+    background: #ffaa00;
+}
+
+/* Footer */
+footer {
+    background: #002a66;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .course-list, .teacher-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
